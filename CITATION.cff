@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the letter."
+title: "Causality cost and tracking gap under non-stationary noise"
+authors:
+  - family-names: Park
+    given-names: Jounsup
+    affiliation: California Baptist University
+license: MIT
+preferred-citation:
+  type: article
+  title: "Causality Cost and Tracking Gap of Wiener Filtering Under Non-Stationary Noise"
+  authors:
+    - family-names: Park
+      given-names: Jounsup
+  journal: "IEEE Signal Processing Letters"
+  year: 2026
+  notes: "Submitted; update volume/pages/DOI on acceptance."

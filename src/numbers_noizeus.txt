@@ -1,0 +1,10 @@
+NOIZEUS 15 dB, n=210: mean T +0.46 dB; positive in 7 of 7 noise types
+Tracking gap T      : within-type slope +0.253 dB/dB (cluster-robust p 1.2e-07, df 29, R2 0.32) | type means slope +0.223, r +0.87, p 0.011
+B_c, global dSNR    : within-type slope +0.122 dB/dB (cluster-robust p 8.8e-05, df 29, R2 0.19) | type means slope -0.026, r -0.14, p 0.763
+B_c, dSegSNR        : within-type slope -0.248 dB/dB (cluster-robust p 1.6e-07, df 29, R2 0.45) | type means slope -0.158, r -0.94, p 0.002
+T versus NSI at the other SNRs (within noise type):
+   0 dB: slope +0.300 (p 1.2e-06)
+   5 dB: slope +0.362 (p 2.2e-08)
+  10 dB: slope +0.306 (p 1.3e-07)
+Sentence identity explains 41% of the noise-type-detrended variance of B_c in dSegSNR (F=4.27, p=7.0e-10)
+Sentence identity explains 24% of the noise-type-detrended variance of B_c in MSE (F=1.96, p=4.2e-03)

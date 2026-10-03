@@ -1,0 +1,13 @@
+train-noise mean NSI by SNR: {0: 2.79, 5: 2.63, 10: 2.65}
+T                     0 dB 7 types: within slope +0.300 (p 1.15e-06); type means slope +0.432 (r +0.95, p 0.001)
+T                     0 dB 8 types: within slope +0.296 (p 8.52e-07); type means slope +0.394 (r +0.85, p 0.008)
+T                     5 dB 7 types: within slope +0.362 (p 2.20e-08); type means slope +0.363 (r +0.85, p 0.016)
+T                     5 dB 8 types: within slope +0.362 (p 1.31e-08); type means slope +0.334 (r +0.73, p 0.040)
+T                    10 dB 7 types: within slope +0.306 (p 1.30e-07); type means slope +0.318 (r +0.90, p 0.006)
+T                    10 dB 8 types: within slope +0.305 (p 8.18e-08); type means slope +0.302 (r +0.80, p 0.018)
+B_c (global dSNR)     0 dB 7 types: within slope +0.181 (p 8.76e-07); type means slope -0.062 (r -0.20, p 0.664)
+B_c (global dSNR)     0 dB 8 types: within slope +0.181 (p 1.06e-06); type means slope -0.027 (r -0.08, p 0.855)
+B_c (global dSNR)     5 dB 7 types: within slope +0.098 (p 7.69e-04); type means slope -0.068 (r -0.23, p 0.614)
+B_c (global dSNR)     5 dB 8 types: within slope +0.096 (p 1.07e-03); type means slope -0.022 (r -0.05, p 0.907)
+B_c (global dSNR)    10 dB 7 types: within slope +0.078 (p 1.25e-03); type means slope +0.005 (r +0.02, p 0.958)
+B_c (global dSNR)    10 dB 8 types: within slope +0.072 (p 3.97e-03); type means slope +0.030 (r +0.09, p 0.838)

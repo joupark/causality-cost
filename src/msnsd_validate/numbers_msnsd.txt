@@ -1,0 +1,26 @@
+== MS-SNSD (16 kHz, n=360 = 40 speech x 9 noise types), SNR=15dB ==
+NSI range: 1.08 - 22.33 dB
+means:
+bc_sig   -1.086
+nlms     -9.395
+mmse     -2.773
+omlsa    -1.449
+
+== Bc vs NSI (SegSNR domain) -- replicates NOIZEUS slope -0.25
+slope -0.3004  p_cluster 1.016e-12  t=-10.329 df=39
+
+== Delta B (Prop. 2 primary test) vs NSI
+slope +0.0573  p_cluster 1.265e-02  R2=0.034
+
+== Gap vs NSI, cluster-robust + Holm-Bonferroni across 3 methods
+nlms   slope +0.223  p_cluster 9.822e-08
+mmse   slope +0.434  p_cluster 4.003e-12
+omlsa  slope +0.408  p_cluster 2.180e-12
+  Holm: omlsa  p_holm 6.540e-12  reject@0.05 True
+  Holm: mmse   p_holm 8.005e-12  reject@0.05 True
+  Holm: nlms   p_holm 9.822e-08  reject@0.05 True
+
+== Bc global dSNR (MSE domain) vs NSI -- direction check vs NOIZEUS (+0.12)
+slope -0.0613  p_cluster 1.373e-05  mean_dsnr=1.202
+
+wrote /home/claude/repro/msnsd_validate/../figures/fig_msnsd.pdf

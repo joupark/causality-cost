@@ -1,0 +1,9 @@
+NOIZEUS 15 dB, global dSNR means (dB): {'dsnr': 0.53, 'nlms': -8.29, 'dfn3': -4.54, 'mmse': 1.17, 'omlsa': 2.73}
+nlms   MSE-domain gap vs NSI: within +0.169 (p 9.07e-02) | type means +0.011 (r +0.12, p 0.801) | vs log tau_c within -0.286 (p 6.05e-03)
+dfn3   MSE-domain gap vs NSI: within +0.110 (p 5.69e-01) | type means +0.316 (r +0.54, p 0.212) | vs log tau_c within -0.219 (p 1.16e-01)
+mmse   MSE-domain gap vs NSI: within +0.310 (p 3.45e-06) | type means +0.231 (r +0.74, p 0.060) | vs log tau_c within -0.149 (p 4.28e-02)
+omlsa  MSE-domain gap vs NSI: within +0.575 (p 4.64e-11) | type means +0.450 (r +0.77, p 0.044) | vs log tau_c within -0.438 (p 8.75e-07)
+   Holm omlsa: p_holm 1.86e-10 reject True
+   Holm mmse: p_holm 1.04e-05 reject True
+   Holm nlms: p_holm 1.81e-01 reject False
+   Holm dfn3: p_holm 5.69e-01 reject False

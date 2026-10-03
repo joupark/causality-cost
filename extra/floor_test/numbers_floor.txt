@@ -1,0 +1,13 @@
+m, beta, lb_global, lb_exact, win_best, ewma_best, mlp_short, mlp_long, best, best/lb_exact, win_best_C
+8 0.06250 3.052e-05 3.091e-04 2.735e-03 2.723e-03 3.809e-03 2.361e-03 2.361e-03 7.64 64
+16 0.02210 1.526e-05 1.580e-04 1.385e-03 1.380e-03 3.240e-03 1.429e-03 1.380e-03 8.73 128
+32 0.00781 7.629e-06 7.983e-05 6.884e-04 6.858e-04 2.363e-03 8.234e-04 6.858e-04 8.59 256
+64 0.00276 3.815e-06 4.050e-05 3.469e-04 3.459e-04 1.680e-03 4.750e-04 3.459e-04 8.54 512
+log-log slope vs beta, lb_exact: 0.652
+log-log slope vs beta, win_best: 0.663
+log-log slope vs beta, ewma_best: 0.663
+log-log slope vs beta, mlp_long: 0.516
+log-log slope vs beta, mlp_short: 0.267
+log-log slope vs beta, best achievable: 0.621
+all estimators >= lb_exact: True
+window/lb_exact range: [8.85 8.77 8.62 8.57] ; mlp_long/lb_exact: [ 7.64  9.04 10.31 11.73]
