@@ -18,7 +18,7 @@ for snr, col in [(0, 'tab:blue'), (15, 'tab:red')]:
                        for _, s in d.groupby('sentence')])
         c0 = d.groupby('sentence').c0.mean().values
         mn, lo, hi = ci(sl)
-        P(f'  Delta B slope (nu<={sub}): {mn:.5f} [{lo:.5f},{hi:.5f}], p={ttest_1samp(sl,0).pvalue:.1e}; '
+        P(f'  Tracking gap T slope (nu<={sub}): {mn:.5f} [{lo:.5f},{hi:.5f}], p={ttest_1samp(sl,0).pvalue:.1e}; '
           f'predicted c0 {c0.mean():.5f}; median ratio {np.median(sl/c0):.2f}')
     d['C_norm'] = d.bc_mse_norm - d.bs_norm
     for y in ['bs_norm', 'C_norm', 'oracle_norm']:
@@ -35,15 +35,15 @@ for snr, col in [(0, 'tab:blue'), (15, 'tab:red')]:
     ax[1].plot(g.index, g.bc_dsnr - base.bc_dsnr, 'o-', color=col, label=f'global $\\Delta$SNR, {snr} dB')
     ax[1].plot(g.index, g.bc_dsegsnr - base.bc_dsegsnr, 's--', color=col, label=f'$\\Delta$SegSNR, {snr} dB')
 xx = np.linspace(0, 3.6, 10)
-ax[0].plot(xx, xx, 'k:', label='Lemma 1: $\\Delta B/c_0=\\nu$')
-ax[0].set(xlabel='effective envelope variance $\\nu$', ylabel='$\\Delta B / c_0$', title='(a) Causality cost vs. prediction')
+ax[0].plot(xx, xx, 'k:', label='Lemma 1: $T/c_0=\\nu$')
+ax[0].set(xlabel='effective envelope variance $\\nu$', ylabel='$T / c_0$', title='(a) Tracking gap vs. prediction')
 ax[0].legend(fontsize=7); ax[0].grid(alpha=.3)
 ax[1].axhline(0, c='k', lw=.8)
 ax[1].set(xlabel='nominal $\\nu$', ylabel='change of $B_c$ from $\\nu{=}0$ (dB)', title='(b) $B_c$: MSE fixed, SegSNR falls')
 ax[1].legend(fontsize=6); ax[1].grid(alpha=.3)
 b = pd.read_csv(os.path.join(HERE, 'results_partB_snr15.csv'))
 full = b.copy(); b = b.dropna(subset=['obs'])
-P('== Part B (Prop. 3), 15 dB')
+P('== Part B (Prop. 2), 15 dB')
 for cfg, col, lab in [('mod_low', 'tab:green', 'low band modulated'), ('mod_high', 'tab:purple', 'high band modulated')]:
     s = b[b.config == cfg]; t = full[full.config == cfg].groupby('nu').bc_mse.mean()
     P(f'  {cfg}: B_c MSE change nu 0->4 {100*(t.iloc[-1]/t.iloc[0]-1):+.1f}%; sign agreement '
@@ -53,7 +53,8 @@ for cfg, col, lab in [('mod_low', 'tab:green', 'low band modulated'), ('mod_high
 lim = np.abs(b[['obs', 'pred']].values).max() * 1e6
 ax[2].plot([-lim, lim], [-lim, lim], 'k:', lw=1)
 ax[2].set(xlabel='predicted $\\mathbf{w}^{*T}\\mathbf{H}\\mathbf{w}^*$ ($\\times10^{-6}$)',
-          ylabel='observed $\\Delta B_c/\\Delta\\nu$ ($\\times10^{-6}$)', title='(c) Retreat condition (Prop. 3)')
+          ylabel='observed $\\Delta B_c/\\Delta\\nu$ ($\\times10^{-6}$)', title='(c) Sign condition (Prop. 2)')
 ax[2].legend(fontsize=7); ax[2].grid(alpha=.3)
+os.makedirs(os.path.join(HERE, '..', 'figures'), exist_ok=True)
 fig.tight_layout(); fig.savefig(os.path.join(HERE, '..', 'figures', 'fig_controlled.pdf'))
 out.close()

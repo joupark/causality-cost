@@ -1,15 +1,15 @@
-"""Controlled modulation experiment (tests Propositions 2-3 and Corollary 1
+"""Controlled modulation experiment (tests Propositions 1-2 and Lemma 1
 by manipulating non-stationarity directly instead of observing it).
 
 PREDICTIONS, written before running:
  (A) Stationary base noise (NOIZEUS car) is given a mean-one power envelope
      a(k) ~ Gamma(1/nu, nu) on 64 ms segments, so the averaged spectrum is
      fixed while nu varies.
-     A1: Delta B (frequency-domain LTI gain vs frame oracle, linear MSE)
+     A1: tracking gap T (frequency-domain LTI gain vs frame oracle, linear MSE)
          grows with the effective envelope variance nu_eff with slope c0
          (Lemma 1), c0 computed from the averaged PSDs alone.
      A2: B_c (FIR Wiener-Hopf, L=128, MSE) does not change with nu
-         (Proposition 2(i)).
+         (Proposition 1(i)).
      A3: if B_c's DeltaSegSNR still falls with nu, the SegSNR decrease is a
          metric effect (MSE held fixed by construction).
      A4 (added 2026-09-11, before re-running): the non-causal LTI bound B_s
@@ -22,8 +22,8 @@ PREDICTIONS, written before running:
      B1 (config 'mod_low'): power leaves the low (speech) band -> B_c
          improves (dB_c/dnu < 0).
      B2 (config 'mod_high'): power leaves the high band, relative
-         low-band power rises -> B_c retreats (dB_c/dnu > 0).
-     B3: the Proposition 3 quantity w^T H w, computed from w at nu_j and
+         low-band power rises -> B_c degrades (dB_c/dnu > 0).
+     B3: the Proposition 2 quantity w^T H w, computed from w at nu_j and
          the NOISE-ONLY correlation change to nu_{j+1}, predicts the sign
          and size of the observed (B_c(nu_{j+1}) - B_c(nu_j)).
 """

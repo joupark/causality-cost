@@ -1,5 +1,5 @@
 #!/bin/sh
-# Reproduces the MS-SNSD second-corpus validation (Section V-E, Fig. 4).
+# Reproduces the MS-SNSD second-corpus validation (Section III-C, Table II).
 # Requires the MS-SNSD test folders (see README.md for how to fetch them
 # without downloading the ~2.5GB full repository).
 set -e

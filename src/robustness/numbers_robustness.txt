@@ -1,0 +1,67 @@
+surrogate NSI mean {0: 0.98, 15: 0.98}  real NSI {0: 2.42, 15: 2.26}
+
+===== ORACLE NULL, 15 dB (n=210)
+K1   mean T_real +0.635  T_null +0.288  excess +0.347 (p 4.2e-12, >0 in 7/7 types) | slope real +0.247 (p 4.8e-07, R2 0.28); null +0.009 (p 7.8e-02); excess +0.238 (p 2.4e-07, R2 0.27)
+K3   mean T_real +0.465  T_null +0.120  excess +0.344 (p 1.7e-12, >0 in 7/7 types) | slope real +0.253 (p 1.2e-07, R2 0.32); null +0.008 (p 1.7e-02); excess +0.245 (p 8.4e-08, R2 0.31)
+K5   mean T_real +0.398  T_null +0.076  excess +0.322 (p 2.8e-12, >0 in 7/7 types) | slope real +0.246 (p 3.2e-08, R2 0.35); null +0.007 (p 1.0e-02); excess +0.239 (p 2.2e-08, R2 0.34)
+K9   mean T_real +0.322  T_null +0.044  excess +0.277 (p 8.6e-12, >0 in 7/7 types) | slope real +0.230 (p 2.1e-08, R2 0.40); null +0.006 (p 1.3e-02); excess +0.223 (p 1.5e-08, R2 0.39)
+K17  mean T_real +0.230  T_null +0.024  excess +0.206 (p 2.7e-11, >0 in 7/7 types) | slope real +0.177 (p 3.7e-07, R2 0.40); null +0.004 (p 1.9e-02); excess +0.173 (p 4.6e-07, R2 0.39)
+loo  mean T_real +0.077  T_null -0.133  excess +0.210 (p 3.7e-10, >0 in 7/7 types) | slope real +0.167 (p 5.6e-07, R2 0.28); null +0.004 (p 2.9e-01); excess +0.163 (p 3.1e-07, R2 0.27)
+              nsi   T_K3   N_K3     D3  T_loo  N_loo
+noise_type                                          
+car         1.126  0.153  0.117  0.036 -0.136 -0.159
+station     1.804  0.342  0.111  0.230  0.053 -0.123
+exhibition  2.046  0.598  0.124  0.474  0.046 -0.161
+airport     2.335  0.488  0.125  0.363  0.141 -0.120
+babble      2.518  0.455  0.108  0.347  0.074 -0.120
+street      2.840  0.545  0.134  0.411  0.121 -0.129
+restaurant  3.142  0.671  0.122  0.549  0.240 -0.122
+  type means T_K3: slope +0.223 r +0.87 p 0.011
+  type means D3: slope +0.218 r +0.87 p 0.011
+
+===== ORACLE NULL, 0 dB (n=210)
+K1   mean T_real +1.348  T_null +0.784  excess +0.564 (p 6.0e-15, >0 in 7/7 types) | slope real +0.293 (p 1.3e-06, R2 0.34); null -0.024 (p 1.6e-04); excess +0.317 (p 6.0e-07, R2 0.37)
+K3   mean T_real +0.885  T_null +0.310  excess +0.575 (p 2.4e-15, >0 in 7/7 types) | slope real +0.300 (p 1.2e-06, R2 0.35); null -0.006 (p 1.3e-01); excess +0.306 (p 7.8e-07, R2 0.36)
+K5   mean T_real +0.741  T_null +0.193  excess +0.547 (p 3.2e-15, >0 in 7/7 types) | slope real +0.283 (p 1.5e-06, R2 0.33); null -0.004 (p 2.6e-01); excess +0.288 (p 9.2e-07, R2 0.34)
+K9   mean T_real +0.601  T_null +0.110  excess +0.491 (p 6.8e-15, >0 in 7/7 types) | slope real +0.258 (p 8.5e-07, R2 0.32); null -0.002 (p 3.4e-01); excess +0.260 (p 5.6e-07, R2 0.33)
+K17  mean T_real +0.455  T_null +0.058  excess +0.397 (p 2.0e-14, >0 in 7/7 types) | slope real +0.213 (p 3.3e-07, R2 0.28); null -0.001 (p 4.1e-01); excess +0.214 (p 2.9e-07, R2 0.29)
+loo  mean T_real -0.047  T_null -0.460  excess +0.413 (p 1.2e-13, >0 in 7/7 types) | slope real +0.238 (p 1.6e-06, R2 0.32); null +0.009 (p 4.0e-02); excess +0.229 (p 1.8e-06, R2 0.30)
+              nsi   T_K3   N_K3     D3  T_loo  N_loo
+noise_type                                          
+car         1.217  0.377  0.318  0.059 -0.431 -0.450
+station     2.004  0.717  0.310  0.407 -0.165 -0.440
+exhibition  2.086  0.716  0.289  0.427 -0.317 -0.488
+babble      2.409  0.870  0.313  0.557 -0.115 -0.494
+airport     2.668  1.077  0.300  0.777  0.211 -0.438
+street      3.121  0.973  0.312  0.661  0.058 -0.451
+restaurant  3.449  1.467  0.331  1.136  0.430 -0.458
+  type means T_K3: slope +0.432 r +0.95 p 0.001
+  type means D3: slope +0.427 r +0.95 p 0.001
+
+===== CONTROLLED GENERALITY, 15 dB
+car        gamma       64ms NSI  1.1->16.3 | small-nu slope 0.00200 [0.00126,0.00274] vs c0 0.00210 | Bc -0.04%/nu (p 0.58) Bs +0.03%/nu (p 0.72) | T/T_2nd nu=.1..4: 1.04 0.99 0.94 0.86 0.76 0.64 | T/T_exact: 1.08 1.05 1.04 1.03 1.03 1.04
+station    gamma       64ms NSI  1.8->16.4 | small-nu slope 0.00143 [0.00059,0.00226] vs c0 0.00198 | Bc -0.06%/nu (p 0.58) Bs +0.05%/nu (p 0.63) | T/T_2nd nu=.1..4: 0.68 0.75 0.76 0.72 0.65 0.55 | T/T_exact: 0.78 0.86 0.89 0.90 0.91 0.90
+exhibition gamma       64ms NSI  2.0->16.3 | small-nu slope 0.00189 [0.00126,0.00252] vs c0 0.00206 | Bc +0.20%/nu (p 0.40) Bs +0.45%/nu (p 0.22) | T/T_2nd nu=.1..4: 0.87 0.92 0.91 0.86 0.77 0.64 | T/T_exact: 0.97 1.02 1.05 1.06 1.06 1.05
+airport    gamma       64ms NSI  2.3->16.4 | small-nu slope 0.00182 [0.00120,0.00245] vs c0 0.00215 | Bc +0.16%/nu (p 0.32) Bs +0.41%/nu (p 0.04) | T/T_2nd nu=.1..4: 0.95 0.90 0.85 0.78 0.69 0.59 | T/T_exact: 0.99 0.96 0.95 0.94 0.93 0.94
+babble     gamma       64ms NSI  2.5->16.4 | small-nu slope 0.00160 [0.00088,0.00231] vs c0 0.00194 | Bc -0.04%/nu (p 0.47) Bs +0.17%/nu (p 0.21) | T/T_2nd nu=.1..4: 0.85 0.84 0.81 0.76 0.69 0.60 | T/T_exact: 0.93 0.92 0.91 0.91 0.92 0.94
+street     gamma       64ms NSI  2.8->16.5 | small-nu slope 0.00164 [0.00095,0.00232] vs c0 0.00217 | Bc -0.19%/nu (p 0.16) Bs +0.17%/nu (p 0.45) | T/T_2nd nu=.1..4: 0.78 0.79 0.75 0.68 0.56 0.42 | T/T_exact: 0.86 0.87 0.86 0.84 0.80 0.74
+restaurant gamma       64ms NSI  3.1->16.5 | small-nu slope 0.00199 [0.00125,0.00274] vs c0 0.00198 | Bc -0.19%/nu (p 0.12) Bs +0.27%/nu (p 0.28) | T/T_2nd nu=.1..4: 1.24 1.10 1.00 0.89 0.76 0.62 | T/T_exact: 1.29 1.16 1.10 1.04 1.00 0.96
+car        lognormal   64ms NSI  1.1-> 5.6 | small-nu slope 0.00196 [0.00119,0.00273] vs c0 0.00210 | Bc -0.04%/nu (p 0.46) Bs +0.01%/nu (p 0.91) | T/T_2nd nu=.1..4: 1.06 1.00 0.92 0.82 0.70 0.60 | T/T_exact: 1.11 1.09 1.09 1.08 1.07 1.07
+car        twostate    64ms NSI  1.1->15.3 | small-nu slope 0.00200 [0.00124,0.00275] vs c0 0.00211 | Bc +0.03%/nu (p 0.60) Bs +0.07%/nu (p 0.40) | T/T_2nd nu=.1..4: 1.16 1.04 0.96 0.88 0.81 0.75 | T/T_exact: 1.19 1.12 1.08 1.05 1.03 1.00
+car        gamma       32ms NSI  1.1->14.5 | small-nu slope 0.00162 [0.00097,0.00226] vs c0 0.00211 | Bc +0.05%/nu (p 0.26) Bs +0.06%/nu (p 0.44) | T/T_2nd nu=.1..4: 0.56 0.71 0.77 0.77 0.72 0.64 | T/T_exact: 0.57 0.74 0.83 0.89 0.93 0.97
+car        gamma      128ms NSI  1.1->16.2 | small-nu slope 0.00257 [0.00182,0.00332] vs c0 0.00211 | Bc +0.07%/nu (p 0.07) Bs +0.11%/nu (p 0.12) | T/T_2nd nu=.1..4: 1.43 1.28 1.18 1.06 0.93 0.78 | T/T_exact: 1.49 1.35 1.27 1.21 1.17 1.14
+car        gamma      256ms NSI  1.1->16.4 | small-nu slope 0.00227 [0.00114,0.00340] vs c0 0.00212 | Bc +0.01%/nu (p 0.73) Bs -0.11%/nu (p 0.32) | T/T_2nd nu=.1..4: 1.52 1.23 1.09 0.97 0.85 0.72 | T/T_exact: 1.37 1.17 1.07 1.01 0.98 0.96
+
+===== CONTROLLED GENERALITY, 0 dB
+car        gamma       64ms NSI  1.1->16.7 | small-nu slope 0.06050 [0.04104,0.07996] vs c0 0.06859 | Bc -0.02%/nu (p 0.86) Bs +0.09%/nu (p 0.44) | T/T_2nd nu=.1..4: 0.82 0.87 0.86 0.79 0.68 0.54 | T/T_exact: 0.84 0.92 0.95 0.97 0.98 0.99
+station    gamma       64ms NSI  1.8->16.9 | small-nu slope 0.06133 [0.04229,0.08038] vs c0 0.07475 | Bc +0.10%/nu (p 0.54) Bs +0.34%/nu (p 0.07) | T/T_2nd nu=.1..4: 0.70 0.79 0.81 0.76 0.66 0.52 | T/T_exact: 0.73 0.84 0.89 0.93 0.94 0.96
+exhibition gamma       64ms NSI  2.0->16.7 | small-nu slope 0.05072 [0.03181,0.06962] vs c0 0.06385 | Bc +0.33%/nu (p 0.25) Bs +0.45%/nu (p 0.20) | T/T_2nd nu=.1..4: 0.59 0.74 0.79 0.77 0.68 0.54 | T/T_exact: 0.61 0.79 0.88 0.94 0.97 0.98
+airport    gamma       64ms NSI  2.3->16.8 | small-nu slope 0.06240 [0.04327,0.08154] vs c0 0.07258 | Bc +0.14%/nu (p 0.52) Bs +0.70%/nu (p 0.01) | T/T_2nd nu=.1..4: 0.72 0.81 0.82 0.77 0.66 0.53 | T/T_exact: 0.74 0.85 0.91 0.94 0.95 0.96
+babble     gamma       64ms NSI  2.5->16.8 | small-nu slope 0.06732 [0.04584,0.08881] vs c0 0.07823 | Bc -0.02%/nu (p 0.88) Bs +0.49%/nu (p 0.04) | T/T_2nd nu=.1..4: 0.80 0.85 0.84 0.77 0.66 0.53 | T/T_exact: 0.83 0.90 0.93 0.95 0.97 0.98
+street     gamma       64ms NSI  2.8->16.9 | small-nu slope 0.05348 [0.02926,0.07770] vs c0 0.07151 | Bc -0.22%/nu (p 0.14) Bs +0.36%/nu (p 0.22) | T/T_2nd nu=.1..4: 0.54 0.68 0.72 0.69 0.59 0.47 | T/T_exact: 0.56 0.72 0.80 0.84 0.86 0.88
+restaurant gamma       64ms NSI  3.1->17.0 | small-nu slope 0.06780 [0.04713,0.08848] vs c0 0.07537 | Bc -0.30%/nu (p 0.17) Bs +0.60%/nu (p 0.03) | T/T_2nd nu=.1..4: 0.82 0.88 0.87 0.81 0.69 0.54 | T/T_exact: 0.84 0.93 0.96 0.98 0.99 0.99
+car        lognormal   64ms NSI  1.1-> 5.6 | small-nu slope 0.05340 [0.03471,0.07209] vs c0 0.06861 | Bc -0.04%/nu (p 0.61) Bs +0.04%/nu (p 0.70) | T/T_2nd nu=.1..4: 0.82 0.81 0.75 0.65 0.54 0.45 | T/T_exact: 0.88 0.94 0.97 0.99 1.00 1.01
+car        twostate    64ms NSI  1.1->15.3 | small-nu slope 0.05485 [0.03642,0.07328] vs c0 0.06871 | Bc +0.01%/nu (p 0.89) Bs +0.09%/nu (p 0.35) | T/T_2nd nu=.1..4: 0.98 0.88 0.81 0.75 0.71 0.78 | T/T_exact: 1.14 1.08 1.06 1.04 1.02 1.01
+car        gamma       32ms NSI  1.1->14.9 | small-nu slope 0.06198 [0.05078,0.07319] vs c0 0.06870 | Bc +0.08%/nu (p 0.32) Bs +0.13%/nu (p 0.16) | T/T_2nd nu=.1..4: 0.94 0.95 0.92 0.86 0.74 0.60 | T/T_exact: 0.95 0.99 1.00 1.00 1.00 1.00
+car        gamma      128ms NSI  1.1->16.7 | small-nu slope 0.07957 [0.05747,0.10167] vs c0 0.06873 | Bc +0.09%/nu (p 0.31) Bs +0.22%/nu (p 0.08) | T/T_2nd nu=.1..4: 1.37 1.24 1.15 1.04 0.89 0.69 | T/T_exact: 1.37 1.25 1.19 1.15 1.11 1.09
+car        gamma      256ms NSI  1.1->16.8 | small-nu slope 0.08881 [0.05844,0.11918] vs c0 0.06873 | Bc -0.02%/nu (p 0.67) Bs -0.07%/nu (p 0.52) | T/T_2nd nu=.1..4: 1.83 1.52 1.33 1.15 0.96 0.77 | T/T_exact: 1.75 1.47 1.31 1.19 1.11 1.07

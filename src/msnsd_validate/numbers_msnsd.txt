@@ -9,7 +9,7 @@ omlsa    -1.449
 == Bc vs NSI (SegSNR domain) -- replicates NOIZEUS slope -0.25
 slope -0.3004  p_cluster 1.016e-12  t=-10.329 df=39
 
-== Delta B (Prop. 2 primary test) vs NSI
+== Tracking gap T vs NSI (Section III-C)
 slope +0.0573  p_cluster 1.265e-02  R2=0.034
 
 == Gap vs NSI, cluster-robust + Holm-Bonferroni across 3 methods
@@ -23,4 +23,4 @@ omlsa  slope +0.408  p_cluster 2.180e-12
 == Bc global dSNR (MSE domain) vs NSI -- direction check vs NOIZEUS (+0.12)
 slope -0.0613  p_cluster 1.373e-05  mean_dsnr=1.202
 
-wrote /home/claude/repro/msnsd_validate/../figures/fig_msnsd.pdf
+wrote ../figures/fig_msnsd.pdf

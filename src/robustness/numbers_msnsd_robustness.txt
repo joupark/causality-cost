@@ -1,0 +1,68 @@
+
+===== MS-SNSD ORACLE NULL, 15 dB (n=360)
+K1   mean T_real +1.760  T_null +0.280  excess +1.481 (p 2.5e-28, >0 in 9/9 types) | slope real +0.068 (p 6.2e-03, R2 0.04); null -0.006 (p 2.0e-03); excess +0.074 (p 2.9e-03, R2 0.05)
+K3   mean T_real +1.433  T_null +0.124  excess +1.309 (p 9.2e-28, >0 in 9/9 types) | slope real +0.057 (p 1.3e-02, R2 0.03); null -0.003 (p 9.9e-04); excess +0.060 (p 8.9e-03, R2 0.04)
+K5   mean T_real +1.256  T_null +0.083  excess +1.173 (p 2.1e-27, >0 in 9/9 types) | slope real +0.051 (p 1.8e-02, R2 0.03); null -0.002 (p 1.5e-03); excess +0.053 (p 1.4e-02, R2 0.04)
+K9   mean T_real +1.049  T_null +0.052  excess +0.996 (p 1.3e-26, >0 in 9/9 types) | slope real +0.044 (p 2.3e-02, R2 0.03); null -0.001 (p 6.4e-03); excess +0.045 (p 1.9e-02, R2 0.03)
+K17  mean T_real +0.827  T_null +0.032  excess +0.795 (p 1.3e-25, >0 in 9/9 types) | slope real +0.039 (p 8.7e-03, R2 0.04); null -0.001 (p 1.9e-02); excess +0.040 (p 7.8e-03, R2 0.04)
+loo  mean T_real +0.293  T_null -0.131  excess +0.424 (p 5.3e-20, >0 in 8/9 types) | slope real +0.022 (p 9.2e-02, R2 0.01); null +0.002 (p 3.7e-02); excess +0.020 (p 1.3e-01, R2 0.01)
+                         nsi   T_K3   N_K3     D3  T_loo  N_loo
+noise_type                                                     
+AirConditioner         1.876  0.146  0.109  0.036 -0.107 -0.126
+VacuumCleaner          2.258  0.210  0.115  0.095  0.026 -0.023
+CopyMachine            3.677  0.805  0.113  0.692 -0.066 -0.137
+AirportAnnouncements   3.700  0.820  0.119  0.701  0.451 -0.094
+Babble                 4.258  0.991  0.092  0.898  0.364 -0.105
+Neighbor               7.528  1.620  0.114  1.506  0.844 -0.104
+Munching              10.018  3.289  0.167  3.123  1.236 -0.256
+Typing                12.256  2.778  0.148  2.630 -0.997 -0.196
+ShuttingDoor          13.542  2.243  0.142  2.101  0.888 -0.136
+  type means T_K3: slope +0.229 r +0.90 p 0.001
+  type means D3: slope +0.225 r +0.90 p 0.001
+  per-type slope of excess on NSI: {'AirConditioner': -0.016, 'AirportAnnouncements': 0.175, 'Babble': 0.412, 'CopyMachine': 0.208, 'Munching': -0.084, 'Neighbor': -0.015, 'ShuttingDoor': -0.032, 'Typing': 0.133, 'VacuumCleaner': -0.068}
+
+===== MS-SNSD ORACLE NULL, 0 dB (n=360)
+K1   mean T_real +3.056  T_null +0.730  excess +2.326 (p 2.6e-29, >0 in 9/9 types) | slope real +0.205 (p 3.6e-06, R2 0.17); null +0.009 (p 3.7e-11); excess +0.196 (p 6.1e-06, R2 0.16)
+K3   mean T_real +2.543  T_null +0.305  excess +2.238 (p 2.2e-28, >0 in 9/9 types) | slope real +0.197 (p 5.2e-06, R2 0.16); null +0.004 (p 2.9e-07); excess +0.193 (p 6.3e-06, R2 0.16)
+K5   mean T_real +2.292  T_null +0.200  excess +2.092 (p 1.4e-27, >0 in 9/9 types) | slope real +0.187 (p 7.2e-06, R2 0.15); null +0.003 (p 1.1e-05); excess +0.184 (p 8.2e-06, R2 0.15)
+K9   mean T_real +1.995  T_null +0.125  excess +1.870 (p 1.7e-26, >0 in 9/9 types) | slope real +0.174 (p 8.2e-06, R2 0.14); null +0.002 (p 7.9e-04); excess +0.173 (p 8.7e-06, R2 0.14)
+K17  mean T_real +1.648  T_null +0.075  excess +1.572 (p 9.5e-26, >0 in 9/9 types) | slope real +0.159 (p 5.5e-06, R2 0.14); null +0.001 (p 2.6e-04); excess +0.158 (p 5.9e-06, R2 0.14)
+loo  mean T_real +0.553  T_null -0.387  excess +0.940 (p 4.0e-19, >0 in 8/9 types) | slope real +0.092 (p 1.2e-03, R2 0.06); null -0.003 (p 6.0e-04); excess +0.096 (p 8.7e-04, R2 0.06)
+                         nsi   T_K3   N_K3     D3  T_loo  N_loo
+noise_type                                                     
+AirConditioner         1.876  0.433  0.298  0.135 -0.278 -0.381
+VacuumCleaner          2.258  0.656  0.336  0.320  0.092 -0.164
+CopyMachine            3.677  1.249  0.313  0.936 -0.238 -0.454
+AirportAnnouncements   3.700  1.865  0.335  1.531  1.078 -0.404
+Babble                 4.258  1.933  0.337  1.596  0.760 -0.484
+Neighbor               7.528  3.565  0.354  3.211  2.184 -0.431
+Munching              10.103  4.433  0.237  4.196  1.629 -0.394
+Typing                12.256  4.499  0.264  4.236 -2.742 -0.465
+ShuttingDoor          13.721  4.258  0.275  3.983  2.493 -0.307
+  type means T_K3: slope +0.352 r +0.95 p 0.000
+  type means D3: slope +0.358 r +0.95 p 0.000
+  per-type slope of excess on NSI: {'AirConditioner': -0.018, 'AirportAnnouncements': 0.387, 'Babble': 0.504, 'CopyMachine': 0.331, 'Munching': 0.051, 'Neighbor': 0.241, 'ShuttingDoor': 0.044, 'Typing': 0.31, 'VacuumCleaner': -0.409}
+
+===== MS-SNSD CONTROLLED (gamma, 64 ms), 15 dB
+AirConditioner        NSI  1.9->15.9 | small-nu slope 0.00141 [0.00107,0.00175] vs c0 0.00137 | Bc +0.13%/nu (p 0.01) Bs +0.26%/nu (p 0.01) | T/T_2nd: 1.10 1.07 1.02 0.95 0.85 0.72 | T/T_exact: 1.10 1.10 1.10 1.09 1.09 1.10
+AirportAnnouncements  NSI  3.7->16.2 | small-nu slope 0.00149 [0.00119,0.00179] vs c0 0.00156 | Bc +0.05%/nu (p 0.36) Bs +0.18%/nu (p 0.05) | T/T_2nd: 1.02 0.99 0.95 0.89 0.79 0.66 | T/T_exact: 1.01 1.01 1.02 1.02 1.02 1.01
+Babble                NSI  4.3->16.3 | small-nu slope 0.00142 [0.00112,0.00173] vs c0 0.00171 | Bc -0.13%/nu (p 0.04) Bs +0.14%/nu (p 0.05) | T/T_2nd: 0.66 0.78 0.82 0.81 0.76 0.65 | T/T_exact: 0.66 0.80 0.87 0.93 0.96 0.98
+CopyMachine           NSI  3.7->16.2 | small-nu slope 0.00193 [0.00163,0.00223] vs c0 0.00199 | Bc -0.04%/nu (p 0.20) Bs +0.00%/nu (p 0.96) | T/T_2nd: 1.04 1.00 0.95 0.88 0.77 0.63 | T/T_exact: 1.06 1.05 1.05 1.04 1.03 1.02
+Munching              NSI 10.0->18.3 | small-nu slope 0.00130 [0.00076,0.00184] vs c0 0.00176 | Bc +0.67%/nu (p 0.13) Bs +2.03%/nu (p 0.00) | T/T_2nd: 0.55 0.72 0.76 0.71 0.60 0.45 | T/T_exact: 0.46 0.69 0.80 0.85 0.84 0.80
+Neighbor              NSI  7.5->17.4 | small-nu slope 0.00191 [0.00142,0.00240] vs c0 0.00183 | Bc -0.20%/nu (p 0.00) Bs +0.13%/nu (p 0.09) | T/T_2nd: 1.27 1.18 1.10 0.98 0.83 0.65 | T/T_exact: 1.28 1.23 1.19 1.14 1.09 1.02
+ShuttingDoor          NSI 13.5->20.0 | small-nu slope 0.00079 [0.00049,0.00108] vs c0 0.00138 | Bc +0.22%/nu (p 0.36) Bs +1.01%/nu (p 0.05) | T/T_2nd: 0.22 0.43 0.53 0.56 0.51 0.38 | T/T_exact: 0.17 0.40 0.54 0.63 0.67 0.63
+Typing                NSI 12.3->19.6 | small-nu slope 0.00165 [0.00107,0.00223] vs c0 0.00218 | Bc -0.39%/nu (p 0.07) Bs +0.63%/nu (p 0.11) | T/T_2nd: 0.82 0.81 0.77 0.68 0.55 0.41 | T/T_exact: 0.86 0.86 0.85 0.81 0.75 0.69
+VacuumCleaner         NSI  2.3->15.9 | small-nu slope 0.00061 [0.00053,0.00069] vs c0 0.00068 | Bc +0.80%/nu (p 0.01) Bs +0.65%/nu (p 0.06) | T/T_2nd: 0.84 0.89 0.90 0.88 0.82 0.72 | T/T_exact: 0.87 0.94 0.98 1.01 1.04 1.08
+ALL                   NSI  6.6->17.3 | small-nu slope 0.00139 [0.00125,0.00152] vs c0 0.00161 | Bc +0.06%/nu (p 0.31) Bs +0.44%/nu (p 0.00) | T/T_2nd: 0.85 0.88 0.87 0.81 0.70 0.56 | T/T_exact: 0.82 0.90 0.93 0.94 0.93 0.91
+
+===== MS-SNSD CONTROLLED (gamma, 64 ms), 0 dB
+AirConditioner        NSI  1.9->16.2 | small-nu slope 0.05094 [0.04294,0.05894] vs c0 0.05533 | Bc +0.21%/nu (p 0.00) Bs +0.35%/nu (p 0.00) | T/T_2nd: 0.95 0.94 0.90 0.83 0.71 0.55 | T/T_exact: 0.97 0.98 0.99 1.00 1.01 1.02
+AirportAnnouncements  NSI  3.7->16.6 | small-nu slope 0.06480 [0.05523,0.07437] vs c0 0.07011 | Bc -0.10%/nu (p 0.33) Bs +0.31%/nu (p 0.01) | T/T_2nd: 0.97 0.95 0.91 0.83 0.70 0.54 | T/T_exact: 0.99 0.99 0.99 1.00 1.00 1.01
+Babble                NSI  4.3->16.6 | small-nu slope 0.07105 [0.06111,0.08099] vs c0 0.08583 | Bc -0.27%/nu (p 0.02) Bs +0.33%/nu (p 0.04) | T/T_2nd: 0.75 0.81 0.81 0.77 0.67 0.53 | T/T_exact: 0.76 0.84 0.88 0.92 0.96 0.98
+CopyMachine           NSI  3.7->16.5 | small-nu slope 0.06650 [0.05703,0.07597] vs c0 0.07119 | Bc -0.11%/nu (p 0.17) Bs +0.15%/nu (p 0.21) | T/T_2nd: 0.98 0.96 0.92 0.84 0.71 0.55 | T/T_exact: 1.00 1.00 1.00 1.00 1.01 1.01
+Munching              NSI 10.1->18.8 | small-nu slope 0.02530 [0.01623,0.03438] vs c0 0.02521 | Bc +0.68%/nu (p 0.18) Bs +2.67%/nu (p 0.00) | T/T_2nd: 0.89 0.98 1.00 0.95 0.82 0.63 | T/T_exact: 0.81 0.97 1.05 1.09 1.09 1.07
+Neighbor              NSI  7.5->17.7 | small-nu slope 0.07554 [0.06314,0.08794] vs c0 0.07752 | Bc -0.60%/nu (p 0.01) Bs +0.54%/nu (p 0.01) | T/T_2nd: 1.07 1.02 0.98 0.89 0.76 0.59 | T/T_exact: 1.08 1.07 1.06 1.06 1.06 1.07
+ShuttingDoor          NSI 13.7->20.9 | small-nu slope 0.02772 [0.02221,0.03324] vs c0 0.03622 | Bc +0.33%/nu (p 0.31) Bs +1.21%/nu (p 0.05) | T/T_2nd: 0.81 0.79 0.76 0.71 0.61 0.47 | T/T_exact: 0.73 0.79 0.82 0.85 0.86 0.86
+Typing                NSI 12.3->20.3 | small-nu slope 0.03369 [0.02343,0.04395] vs c0 0.04192 | Bc -0.54%/nu (p 0.01) Bs +1.02%/nu (p 0.02) | T/T_2nd: 0.68 0.73 0.75 0.73 0.65 0.52 | T/T_exact: 0.69 0.76 0.81 0.85 0.87 0.89
+VacuumCleaner         NSI  2.3->16.2 | small-nu slope 0.02864 [0.02548,0.03180] vs c0 0.03135 | Bc +0.31%/nu (p 0.22) Bs +0.52%/nu (p 0.11) | T/T_2nd: 0.92 0.93 0.91 0.84 0.73 0.57 | T/T_exact: 0.94 0.97 0.99 1.01 1.02 1.03
+ALL                   NSI  6.6->17.8 | small-nu slope 0.04935 [0.04577,0.05293] vs c0 0.05496 | Bc -0.07%/nu (p 0.30) Bs +0.63%/nu (p 0.00) | T/T_2nd: 0.90 0.91 0.88 0.82 0.70 0.55 | T/T_exact: 0.90 0.94 0.96 0.98 0.99 1.00

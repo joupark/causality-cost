@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+# LaTeX build products
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+src/figures/

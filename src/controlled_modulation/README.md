@@ -1,6 +1,6 @@
-# Controlled modulation experiment (Section V-B, Fig. 1)
+# Controlled modulation experiment (Section III-B, Fig. 1)
 
-Tests Propositions 2-3 and Lemma 1 causally by imposing non-stationarity on
+Tests Propositions 1-2 and Lemma 1 causally by imposing non-stationarity on
 stationary noise instead of observing it. Predictions are written in the
 docstring of `controlled_modulation.py` (before the results were computed).
 
@@ -11,7 +11,7 @@ docstring of `controlled_modulation.py` (before the results were computed).
     python3 controlled_numbers.py                  # numbers_controlled.txt, ../figures/fig_controlled.pdf
 
 About 1 minute in total. Seeds are hashlib-based (deterministic).
-Results are summarised in numbers_controlled.txt and Section V-B of the paper.
+Results are summarised in numbers_controlled.txt and Section III-B of the letter.
 
 Added (A4): results_partA_*.csv now also record bs_norm (MSE of the time-invariant
 non-causal gain, i.e. B_s) and oracle_norm (B_nc). B_s and C = B_c - B_s do not change

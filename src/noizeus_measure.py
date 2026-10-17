@@ -14,8 +14,8 @@ slopes versus NSI with cluster-robust standard errors (cluster = sentence),
 the between-type slopes, and the sentence-identity ANOVA.
 
 Usage:  export NOIZEUS_DIR=/path/to/noizeus ;  python3 noizeus_measure.py
-Writes results_noizeus.csv, numbers_noizeus.txt and fig2_tracking_gap.pdf
-(Fig. 2 of the letter) next to this script.
+Writes results_noizeus.csv and numbers_noizeus.txt next to this script;
+spl_figs.py draws Fig. 2 of the letter from them.
 """
 import os, sys, numpy as np, pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -116,5 +116,4 @@ if __name__ == '__main__':
         P(f'Sentence identity explains {100 * ss_b / np.sum((res - res.mean()) ** 2):.0f}% of the '
           f'noise-type-detrended variance of B_c in {lab} (F={F:.2f}, p={p:.1e})')
     out.close()
-    figure(d15, os.path.join(HERE, 'fig2_tracking_gap.pdf'))
-    print('wrote results_noizeus.csv, numbers_noizeus.txt, fig2_tracking_gap.pdf')
+    print('wrote results_noizeus.csv, numbers_noizeus.txt; run spl_figs.py for Fig. 2')

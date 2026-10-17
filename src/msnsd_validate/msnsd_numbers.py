@@ -1,4 +1,4 @@
-"""Reproduces every MS-SNSD number and Fig. 4 in the paper from
+"""Reproduces every MS-SNSD number in the letter from
 results_msnsd_a.csv + results_msnsd_b.csv (written by msnsd_validate.py)."""
 import os, sys, numpy as np, pandas as pd, matplotlib
 matplotlib.use('Agg')
@@ -36,7 +36,7 @@ P('\n== Bc vs NSI (SegSNR domain) -- replicates NOIZEUS slope -0.25')
 r = within(d, 'nsi', 'bc_sig')
 P(f"slope {r['slope']:+.4f}  p_cluster {r['p_cluster']:.3e}  t={r['t']:.3f} df={r['df']}")
 
-P('\n== Delta B (Prop. 2 primary test) vs NSI')
+P('\n== Tracking gap T vs NSI (Section III-C)')
 r = within(d, 'nsi', 'dB')
 P(f"slope {r['slope']:+.4f}  p_cluster {r['p_cluster']:.3e}  R2={r['r2']:.3f}")
 
@@ -80,8 +80,8 @@ ax[1].scatter(xd, yd2, s=10, alpha=.45, color='gray')
 ax[1].plot(xx, r_db['slope']*xx, 'k-', lw=2,
            label=f"{r_db['slope']:+.3f} dB/dB\n$p$={r_db['p_cluster']:.3f} (cluster)")
 ax[1].axhline(0, ls=':', c='gray'); ax[1].axvline(0, ls=':', c='gray')
-ax[1].set(xlabel='NSI - type mean (dB)', ylabel=r'$\Delta B$ - type mean (dB)',
-           title='(b) Causality cost (Prop. 2)')
+ax[1].set(xlabel='NSI - type mean (dB)', ylabel=r'$T$ - type mean (dB)',
+           title='(b) Tracking gap $T$')
 ax[1].legend(fontsize=7); ax[1].grid(alpha=.3)
 
 g = d.groupby('noise_type').mean(numeric_only=True).loc[cats]
@@ -99,5 +99,5 @@ fig.tight_layout()
 figdir = os.path.join(HERE, '..', 'figures')
 os.makedirs(figdir, exist_ok=True)
 fig.savefig(os.path.join(figdir, 'fig_msnsd.pdf'))
-P('\nwrote', os.path.join(figdir, 'fig_msnsd.pdf'))
+P('\nwrote', os.path.relpath(os.path.join(figdir, 'fig_msnsd.pdf'), HERE))
 out.close()

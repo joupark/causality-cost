@@ -2,12 +2,12 @@
 
     dB_c/dnu  =  sum_f |W*(f)|^2 * d(Sbar_v(f))/dnu   (condition S)
 
-is positive (a retreat) iff increasing NSI moves averaged noise power
+is positive (B_c degrades) iff increasing NSI moves averaged noise power
 into the passband of the causal Wiener filter |W*(f)|^2.
 
 So far the paper only checks the SIGN of this quantity indirectly, via
 the sign of the observed Bc-vs-NSI slope in the MSE domain (positive on
-NOIZEUS = no retreat; negative on MS-SNSD = a retreat). This script
+NOIZEUS = B_c improves; negative on MS-SNSD = B_c degrades). This script
 computes the condition (S) statistic directly:
 
   1. For each noise type, fit the pooled (large-sample) Wiener filter
@@ -114,5 +114,5 @@ if __name__ == '__main__':
     print()
     for corpus, g in d.groupby('corpus'):
         pos = (g.S_stat_norm > 0).sum(); n = len(g)
-        print(f'{corpus}: {pos}/{n} noise types have S_stat > 0 (predicted retreat); '
+        print(f'{corpus}: {pos}/{n} noise types have S_stat > 0 (predicted degradation); '
               f'mean S_norm = {g.S_stat_norm.mean():+.4f}')

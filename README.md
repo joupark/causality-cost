@@ -19,10 +19,13 @@ where `B_s` is the non-causal LTI (stationary Wiener) bound. With a fixed
 time-averaged noise spectrum, `B_c` and `C` do not change with
 non-stationarity and only `T` grows; `B_c` itself degrades if and only if
 non-stationarity moves averaged noise power into the passband of the causal
-Wiener filter (condition (S)). It can equally improve, or stay unchanged when
-the spectral redistribution is orthogonal to the filter's squared response.
+Wiener filter (condition (S)). It can equally improve; the derivative also vanishes when the spectral
+redistribution is orthogonal to the filter's squared response, which makes `B_c`
+stationary in the non-stationarity parameter, not necessarily constant.
 
-Every number and figure in the letter is produced by the scripts below.
+Every number and figure in the letter is produced by the scripts below, and
+nothing else is included: the repository holds only what reproduces the letter
+from the two public corpora.
 
 ## Requirements
 
@@ -63,7 +66,7 @@ the conclusions at 0/5/10 dB with all eight.
 | Table II MS-SNSD column | `cd msnsd_validate && bash run_msnsd.sh` |
 | Table II condition (S) row | `cd condition_S && python3 condition_S_test.py` |
 | Sec. III-A eight-type check | `cd eight_types && python3 eight_types.py` |
-| Sec. III-C MSE-domain gap check | `cd gap_mse && python3 gap_mse.py` |
+| Sec. III-B generality (24 configurations, 16 kHz carriers), exact Jensen gap in Fig. 1a; Sec. III-C stationary-surrogate null in Fig. 2a | see `src/robustness/README.md` |
 
 Each folder has a README with its own notes and the expected output. Results
 are written next to the scripts as `results_*.csv` and `numbers_*.txt`; the
@@ -82,15 +85,16 @@ versions used in the letter are committed, so you can diff against them.
 * Statistics use cluster-robust standard errors (cluster = speech item),
   because both corpora reuse the same speech across noise types.
 
-## `extra/`
-
-Material from a longer, unsubmitted study on a context--coherence minimax
-bound: trained causal networks, a floor test in the theorem's own model,
-coherence-time measurements, a data-scaling study, and FIR-order sensitivity.
-It is kept for the record and is **not** part of the letter; its scripts follow
-the numbering of that longer draft, not of the letter.
-
 ## License
 
 Code: MIT (see `LICENSE`). The NOIZEUS and MS-SNSD corpora are distributed by
 their respective owners under their own terms and are not included here.
+
+## Figures
+
+`src/spl_figs.py` regenerates Fig. 1 and Fig. 2 of the letter from the
+committed CSVs and writes them next to itself:
+
+```
+python3 src/spl_figs.py
+```
